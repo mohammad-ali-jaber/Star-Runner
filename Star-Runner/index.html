@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    <span id="score">Score: 0</span>
+    <span id="lives">Lives: 3</span>
+    <span id="high">High: 0</span>
+    <span id="shield-indicator" style="display:none;color:#98ff98;">🛡️</span>
+  </div>
+  <div id="overlay-start" class="overlay">
+    <button id="start-btn">Start</button>
+    <div id="start-error"></div>
+  </div>
+  <div id="overlay-gameover" class="overlay hidden">
+    <div id="gameover-text"></div>
+    <button id="play-again">Play Again</button>
+  </div>
+  <canvas id="game-canvas" width="600" height="400"></canvas>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
